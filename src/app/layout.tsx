@@ -162,6 +162,8 @@ export default function RootLayout({
         <meta name="theme-color" content="#111111" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" href="/fonts/ABCDiatype-Regular-Trial.woff" as="font" type="font/woff" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/PPMondwest-Regular.otf" as="font" type="font/otf" crossOrigin="anonymous" />
       </head>
       <body className={`${diaType.variable} ${ppModwest.variable} antialiased`}>
         {children}
