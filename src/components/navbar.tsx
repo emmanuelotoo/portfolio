@@ -5,13 +5,13 @@ export const Navbar = () => {
     <div className="flex flex-col gap-1">
       <Link
         href="/projects"
-        className="underline decoration-dashed underline-offset-[5px]"
+        className="text-secondary-foreground transition-all duration-300 hover:text-white hover:translate-x-1 underline decoration-dashed underline-offset-[5px]"
       >
         projects
       </Link>
       <Link
         href="/experiences"
-        className="underline decoration-dashed underline-offset-[5px]"
+        className="text-secondary-foreground transition-all duration-300 hover:text-white hover:translate-x-1 underline decoration-dashed underline-offset-[5px]"
       >
         experiences
       </Link>

@@ -12,19 +12,17 @@ export const Time = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const hours = time.toLocaleTimeString("en-US", {
-    hour12: false,
-    hour: "2-digit",
-  });
-
-  const minutes = time
-    .toLocaleTimeString("en-US", {
+  const formatTime = (date: Date) => {
+    return date.toLocaleTimeString("en-US", {
+      hour12: false,
       hour: "2-digit",
       minute: "2-digit",
-      hour12: false,
-    })
-    .split(":")[1];
+      timeZone: "Africa/Accra"
+    });
+  };
 
+  const timeString = formatTime(time);
+  const [hours, minutes] = timeString.split(":");
   const minuteKey = time.getMinutes();
 
   return (

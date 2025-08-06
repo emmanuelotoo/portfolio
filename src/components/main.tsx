@@ -26,7 +26,13 @@ export const Main = () => {
     <section className="flex-grow">
       <div className="flex items-center justify-between mb-2">
         <div className="flex flex-col">
-          <h1 className="font-ppModwest text-2xl">emmanuel otoo</h1>
+          <motion.h1 
+            className="font-ppModwest text-2xl cursor-default"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.2 }}
+          >
+            emmanuel otoo
+          </motion.h1>
           <h2 className="text-secondary-foreground mb-2 font-medium overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.span
@@ -55,12 +61,14 @@ export const Main = () => {
         </a> */}
       </div>
 
-      <p className="mb-2">
-        passionate about building innovative software solutions and exploring new technologies.{" "}
-        experienced in full-stack development with a focus on creating impactful applications.
+      <p className="mb-2 text-secondary-foreground leading-relaxed">
+        I build <span className="text-white">digital experiences</span> that are 
+        intuitive, accessible, and performant. Currently focused on 
+        <span className="text-white"> full-stack development</span> and 
+        exploring the intersection of design and technology.
       </p>
 
-      <p>{`in my downtime, i enjoy reading and staying updated with the latest in tech.`}</p>
+      <p className="text-secondary-foreground">{`in my downtime, i enjoy reading and staying updated with the latest in tech.`}</p>
 
       
     </section>
