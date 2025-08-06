@@ -3,7 +3,6 @@ import { Main } from "@/components/main";
 import { Navbar } from "@/components/navbar";
 import { Status } from "@/components/status";
 import { Skills } from "@/components/skills";
-import { FeaturedProjects } from "@/components/featured-projects";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
           <Main />
           <Status />
           <Skills />
-          <FeaturedProjects />
           <Navbar />
           <Footer />
         </div>
