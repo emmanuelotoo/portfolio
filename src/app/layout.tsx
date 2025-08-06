@@ -151,7 +151,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -160,6 +160,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://emmanuelotoo.dev" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
         <meta name="theme-color" content="#111111" />
+        <meta name="color-scheme" content="dark" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon-16x16.svg" type="image/svg+xml" sizes="16x16" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />

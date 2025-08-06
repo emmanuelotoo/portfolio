@@ -13,26 +13,20 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #2f2f2f;
-  --secondary-foreground: rgb(92, 92, 92);
-  --surface: #EBEBEB;
-}
-
-.dark {
   --background: #111111;
   --foreground: #d0d0d0;
   --secondary-foreground: rgb(163 163 163);
   --surface: #141414;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #111111;
-    --foreground: #d0d0d0;
-    --secondary-foreground: rgb(163 163 163);
-    --surface: #141414
-  }
+/* Force dark mode - override any system preferences */
+html {
+  color-scheme: dark;
+}
+
+html, body {
+  background-color: #111111 !important;
+  color: #d0d0d0 !important;
 }
 
 body {
@@ -107,13 +101,18 @@ body {
   white-space: normal;
 }
 
-/* High contrast mode support */
+/* High contrast mode support - force dark theme */
 @media (prefers-contrast: high) {
   :root {
     --background: #000000;
     --foreground: #ffffff;
     --secondary-foreground: #cccccc;
     --surface: #333333;
+  }
+  
+  html, body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
   }
 }
 
