@@ -23,7 +23,13 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error("Error caught by boundary:", error, errorInfo);
+    // Log error to monitoring service in production
+    if (process.env.NODE_ENV === 'production') {
+      // Add your error reporting service here
+    } else {
+      // eslint-disable-next-line no-console
+      console.error("Error caught by boundary:", error, errorInfo);
+    }
   }
 
   render() {

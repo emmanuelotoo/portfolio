@@ -9,12 +9,14 @@ import {
 import { 
   SiJavascript,
   SiTypescript,
+  SiPython,
   SiCplusplus,
   SiHtml5,
   SiCss3,
   SiReact,
   SiNextdotjs,
   SiExpress,
+  SiFastapi,
   SiTailwindcss,
   SiFramer,
   SiNodedotjs,
@@ -33,6 +35,7 @@ export const Skills = () => {
       skills: [
         { name: "JavaScript", icon: <SiJavascript className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "TypeScript", icon: <SiTypescript className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Python", icon: <SiPython className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "C++", icon: <SiCplusplus className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "HTML", icon: <SiHtml5 className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "CSS", icon: <SiCss3 className="w-3 h-3 sm:w-4 sm:h-4" /> },
@@ -54,6 +57,7 @@ export const Skills = () => {
       icon: <Server className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
         { name: "Node.js", icon: <SiNodedotjs className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "FastAPI", icon: <SiFastapi className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
     {

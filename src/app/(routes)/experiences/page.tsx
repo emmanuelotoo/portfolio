@@ -26,7 +26,7 @@ export default function Experience() {
   return (
     <section className="mb-16">
       <div className="space-y-4">
-        {experiences.map((experience, index) => (
+        {experiences.map((experience) => (
           <motion.a
             key={experience.id}
             href={experience.href}

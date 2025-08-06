@@ -51,7 +51,7 @@ export const ContactForm = () => {
         <div>
           <h3 className="text-white font-medium mb-2">Message sent!</h3>
           <p className="text-secondary-foreground text-sm">
-            Thanks for reaching out. I'll get back to you soon.
+            Thanks for reaching out. I&apos;ll get back to you soon.
           </p>
         </div>
       </motion.div>
@@ -62,7 +62,7 @@ export const ContactForm = () => {
     <div className="space-y-4">
       <div className="flex items-center gap-2 text-sm font-medium text-white">
         <MessageSquare className="w-4 h-4" />
-        <span>&lt; Let's Connect /&gt;</span>
+        <span>&lt; Let&apos;s Connect /&gt;</span>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-4">
