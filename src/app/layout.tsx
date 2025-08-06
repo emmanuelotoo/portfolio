@@ -36,18 +36,18 @@ const ppModwest = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Gaurav Kumar Singh",
+  title: "Emmanuel Otoo",
   openGraph: {
-    title: "Gaurav | Profile",
-    description: "Explore Gaurav's profile - projects.",
-    url: "https://gauravsingh.co.in",
-    siteName: "Gaurav's Portfolio",
+    title: "Emmanuel | Portfolio",
+    description: "Explore Emmanuel's portfolio - software engineer and developer.",
+    url: "https://emmanuelotoo.dev",
+    siteName: "Emmanuel's Portfolio",
     images: [
       {
-        url: "https://gauravsingh.co.in/og-image.png",
+        url: "https://emmanuelotoo.dev/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Tanmay Profile Preview",
+        alt: "Emmanuel Otoo Portfolio Preview",
       },
     ],
     locale: "en-US",
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gaurav | Profile",
-    description: "Explore Gaurav's profile - projects.",
-    images: ["https://gauravsingh.co.in/og-image.png"],
+    title: "Emmanuel | Portfolio",
+    description: "Explore Emmanuel's portfolio - software engineer and developer.",
+    images: ["https://emmanuelotoo.dev/og-image.png"],
   },
 };
 
@@ -66,7 +66,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${diaType.variable} ${ppModwest.variable} antialiased overflow-hidden`}>
+      <body className={`${diaType.variable} ${ppModwest.variable} antialiased`}>
         {children}
         <Analytics />
       </body>

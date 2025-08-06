@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import { ExternalLink } from "lucide-react";
 
-const roles = ["project engineer", "shitposter", "developer", "aspirant"];
+const roles = ["software engineer", "developer"];
 
 const textVariants = {
   initial: { opacity: 0, y: 10 },
@@ -26,7 +26,7 @@ export const Main = () => {
     <section className="flex-grow">
       <div className="flex items-center justify-between mb-2">
         <div className="flex flex-col">
-          <h1 className="font-ppModwest text-2xl">gaurav kr. singh</h1>
+          <h1 className="font-ppModwest text-2xl">emmanuel otoo</h1>
           <h2 className="text-secondary-foreground mb-2 font-medium overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.span
@@ -56,24 +56,11 @@ export const Main = () => {
       </div>
 
       <p className="mb-2">
-        currently, soon joining {" "}
-        <a
-          href="https://www.wipro.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline decoration-dashed underline-offset-[5px]"
-        >
-          wipro
-        </a>
-        {" "}as a project engineer,{" "}
-        <a href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline decoration-dashed underline-offset-[5px] transition-colors duration-300 hover:text-white">gate</a> {" "}aspirant
-          and working across full-stack stuff.
+        passionate about building innovative software solutions and exploring new technologies.{" "}
+        experienced in full-stack development with a focus on creating impactful applications.
       </p>
 
-      <p>{`in my downtime, i enjoy reading and catching up on tech podcasts.`}</p>
+      <p>{`in my downtime, i enjoy reading and staying updated with the latest in tech.`}</p>
 
       
     </section>
