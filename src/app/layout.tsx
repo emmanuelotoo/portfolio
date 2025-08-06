@@ -36,36 +36,133 @@ const ppModwest = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Emmanuel Otoo",
+  title: {
+    default: "Emmanuel Otoo - Software Engineer & Developer",
+    template: "%s | Emmanuel Otoo"
+  },
+  description: "Software Engineer and Full-Stack Developer building intuitive, accessible, and performant digital solutions. Specializing in React, Next.js, TypeScript, and modern web technologies.",
+  keywords: [
+    "Emmanuel Otoo",
+    "Software Engineer",
+    "Full-Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript",
+    "JavaScript",
+    "Web Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Ghana Developer"
+  ],
+  authors: [{ name: "Emmanuel Otoo", url: "https://emmanuelotoo.dev" }],
+  creator: "Emmanuel Otoo",
+  publisher: "Emmanuel Otoo",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "Emmanuel | Portfolio",
-    description: "Explore Emmanuel's portfolio - software engineer and developer.",
+    type: "website",
+    locale: "en_US",
     url: "https://emmanuelotoo.dev",
-    siteName: "Emmanuel's Portfolio",
+    title: "Emmanuel Otoo - Software Engineer & Developer",
+    description: "Software Engineer and Full-Stack Developer building intuitive, accessible, and performant digital solutions.",
+    siteName: "Emmanuel Otoo Portfolio",
     images: [
       {
         url: "https://emmanuelotoo.dev/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Emmanuel Otoo Portfolio Preview",
+        alt: "Emmanuel Otoo - Software Engineer & Developer",
+        type: "image/png",
       },
     ],
-    locale: "en-US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emmanuel | Portfolio",
-    description: "Explore Emmanuel's portfolio - software engineer and developer.",
+    title: "Emmanuel Otoo - Software Engineer & Developer",
+    description: "Software Engineer and Full-Stack Developer building intuitive, accessible, and performant digital solutions.",
+    creator: "@emmanuelotoo_",
     images: ["https://emmanuelotoo.dev/og-image.png"],
   },
+  metadataBase: new URL("https://emmanuelotoo.dev"),
+  alternates: {
+    canonical: "https://emmanuelotoo.dev",
+  },
+  category: "technology",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Emmanuel Otoo",
+    jobTitle: "Software Engineer",
+    description: "Software Engineer and Full-Stack Developer building intuitive, accessible, and performant digital solutions.",
+    url: "https://emmanuelotoo.dev",
+    image: "https://emmanuelotoo.dev/profile.jpg",
+    sameAs: [
+      "https://github.com/emmanuelotoo",
+      "https://www.linkedin.com/in/emmanuel-thisara-otoo-6b9a291b0/",
+      "https://x.com/emmanuelotoo_"
+    ],
+    knowsAbout: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "MongoDB",
+      "SQL",
+      "HTML",
+      "CSS",
+      "TailwindCSS",
+      "Express.js",
+      "Git",
+      "Software Development",
+      "Full-Stack Development",
+      "Web Development"
+    ],
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "University of Ghana",
+      url: "https://www.ug.edu.gh",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Legon",
+        addressRegion: "Greater Accra",
+        addressCountry: "Ghana"
+      }
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Accra",
+      addressCountry: "Ghana"
+    }
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <link rel="canonical" href="https://emmanuelotoo.dev" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#111111" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={`${diaType.variable} ${ppModwest.variable} antialiased`}>
         {children}
         <Analytics />

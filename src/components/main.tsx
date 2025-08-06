@@ -81,7 +81,7 @@ export const Main = () => {
         I build <span className="text-white">solutions</span> that are 
         intuitive, accessible, and performant. Currently focused on 
         <span className="text-white"> full-stack development</span> and 
-        exploring the intersection of design and technology.
+        exploring the intersection of intelligence and technology.
       </p>
 
       <p className="text-secondary-foreground">{`in my downtime, i enjoy hitting the gym or watching anime.`}</p>
