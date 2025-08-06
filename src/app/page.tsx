@@ -6,9 +6,9 @@ import { Skills } from "@/components/skills";
 
 export default function Home() {
   return (
-    <div className="flex max-w-full flex-col py-40 md:py-52">
+    <div className="flex max-w-full flex-col py-20 px-4 sm:py-32 md:py-40 lg:py-52">
       <div className="flex flex-grow items-center justify-center">
-        <div className="flex w-full max-w-xs flex-col gap-8 md:max-w-lg">
+        <div className="flex w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl flex-col gap-6 sm:gap-7 md:gap-8">
           <Main />
           <Status />
           <Skills />

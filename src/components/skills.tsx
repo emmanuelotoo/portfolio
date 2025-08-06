@@ -29,70 +29,70 @@ export const Skills = () => {
   const skillCategories = [
     {
       title: "Languages",
-      icon: <Code className="w-3 h-3" />,
+      icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
-        { name: "JavaScript", icon: <SiJavascript className="w-3 h-3" /> },
-        { name: "TypeScript", icon: <SiTypescript className="w-3 h-3" /> },
-        { name: "C++", icon: <SiCplusplus className="w-3 h-3" /> },
-        { name: "HTML", icon: <SiHtml5 className="w-3 h-3" /> },
-        { name: "CSS", icon: <SiCss3 className="w-3 h-3" /> },
+        { name: "JavaScript", icon: <SiJavascript className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "TypeScript", icon: <SiTypescript className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "C++", icon: <SiCplusplus className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "HTML", icon: <SiHtml5 className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "CSS", icon: <SiCss3 className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
     {
       title: "Frameworks / Libraries",
-      icon: <Globe className="w-3 h-3" />,
+      icon: <Globe className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
-        { name: "React", icon: <SiReact className="w-3 h-3" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="w-3 h-3" /> },
-        { name: "Express.js", icon: <SiExpress className="w-3 h-3" /> },
-        { name: "TailwindCSS", icon: <SiTailwindcss className="w-3 h-3" /> },
-        { name: "Framer Motion", icon: <SiFramer className="w-3 h-3" /> },
+        { name: "React", icon: <SiReact className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Next.js", icon: <SiNextdotjs className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Express.js", icon: <SiExpress className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "TailwindCSS", icon: <SiTailwindcss className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Framer Motion", icon: <SiFramer className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
     {
       title: "Backend & Runtime",
-      icon: <Server className="w-3 h-3" />,
+      icon: <Server className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
-        { name: "Node.js", icon: <SiNodedotjs className="w-3 h-3" /> },
+        { name: "Node.js", icon: <SiNodedotjs className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
     {
       title: "Database",
-      icon: <Database className="w-3 h-3" />,
+      icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
-        { name: "MongoDB", icon: <SiMongodb className="w-3 h-3" /> },
-        { name: "SQL", icon: <Database className="w-3 h-3" /> },
+        { name: "MongoDB", icon: <SiMongodb className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "SQL", icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
     {
       title: "Developer Tools",
-      icon: <Wrench className="w-3 h-3" />,
+      icon: <Wrench className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
-        { name: "Git", icon: <SiGit className="w-3 h-3" /> },
-        { name: "GitHub", icon: <SiGithub className="w-3 h-3" /> },
-        { name: "VS Code", icon: <Code2 className="w-3 h-3" /> },
-        { name: "Vercel", icon: <SiVercel className="w-3 h-3" /> },
-        { name: "Postman", icon: <SiPostman className="w-3 h-3" /> },
+        { name: "Git", icon: <SiGit className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "GitHub", icon: <SiGithub className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "VS Code", icon: <Code2 className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Vercel", icon: <SiVercel className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Postman", icon: <SiPostman className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     }
   ];
   
   return (
-    <div className="space-y-4">
+    <div className="space-y-3 sm:space-y-4">
       {skillCategories.map((category) => (
-        <div key={category.title} className="space-y-2">
-          <div className="flex items-center gap-2 text-xs font-medium text-white">
+        <div key={category.title} className="space-y-2 sm:space-y-3">
+          <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-white">
             {category.icon}
             <span>&lt; {category.title} /&gt;</span>
           </div>
-          <div className="flex flex-wrap gap-2 ml-5">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 ml-4 sm:ml-5">
             {category.skills.map((skill) => (
               <span 
                 key={skill.name} 
-                className="flex items-center gap-1.5 px-2 py-1 text-xs text-secondary-foreground bg-surface rounded-md hover:bg-surface/70 transition-colors cursor-default"
+                className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm text-secondary-foreground bg-surface rounded-md hover:bg-surface/70 transition-colors cursor-default min-h-[32px] sm:min-h-[36px]"
               >
                 {skill.icon}
-                {skill.name}
+                <span className="whitespace-nowrap">{skill.name}</span>
               </span>
             ))}
           </div>
