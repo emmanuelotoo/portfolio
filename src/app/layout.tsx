@@ -161,6 +161,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
         <meta name="theme-color" content="#111111" />
         <meta name="color-scheme" content="dark" />
+        <meta name="msvalidate.01" content="02027B3BC7404075FDDC7C369F9C0D41" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon-16x16.svg" type="image/svg+xml" sizes="16x16" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
