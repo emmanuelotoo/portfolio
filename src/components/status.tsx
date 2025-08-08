@@ -11,7 +11,7 @@ export const Status = () => (
       <Mail className="w-3 h-3 sm:w-4 sm:h-4 opacity-70 group-hover:opacity-100 transition-opacity duration-300 flex-shrink-0" />
     </a>
     <a 
-      href="/cv.pdf" 
+      href="/emmanuelotoo.pdf" 
       download="Emmanuel_Otoo_CV.pdf"
       className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm text-secondary-foreground hover:text-white transition-colors duration-300 group py-2 px-1 min-h-[44px]"
     >
