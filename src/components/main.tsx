@@ -66,9 +66,9 @@ export const Main = () => {
           </div>
         </div>
         {/* <a
-          href="https://drive.google.com/file/d/176dguj4gOO-50Fi5G62Wwx6QFgitfyRB/view?usp=sharing"
+          href="https://drive.google.com/file/d/1MvGG7nZ0cDcDRIf7n1X4zVt2Z3GVHS3e/view?usp=drive_link"
           className="hidden md:flex items-center gap-1 text-base text-secondary-foreground"
-          download="Gaurav_Kr_Singh_Resume.pdf"
+          download="Emmanuel_Otoo_Resume.pdf"
           rel="noopener noreferrer"
           target="_blank"
           aria-label="Download Resume"
