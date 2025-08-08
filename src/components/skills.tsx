@@ -24,7 +24,8 @@ import {
   SiGit,
   SiGithub,
   SiVercel,
-  SiPostman
+  SiDigitalocean,
+  SiMysql
 } from "react-icons/si";
 
 export const Skills = () => {
@@ -65,7 +66,7 @@ export const Skills = () => {
       icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
         { name: "MongoDB", icon: <SiMongodb className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "SQL", icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "MySQL", icon: <SiMysql className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
     {
@@ -76,7 +77,7 @@ export const Skills = () => {
         { name: "GitHub", icon: <SiGithub className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "VS Code", icon: <Code2 className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "Vercel", icon: <SiVercel className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "Postman", icon: <SiPostman className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "DigitalOcean", icon: <SiDigitalocean className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     }
   ];
