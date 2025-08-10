@@ -78,9 +78,9 @@ export const Main = () => {
       </div>
 
       <p className="mb-3 sm:mb-4 text-secondary-foreground leading-relaxed text-sm sm:text-base">
-        I build <span className="text-white">solutions</span> that are 
-        intuitive, accessible, and performant. Currently focused on 
-        <span className="text-white"> full-stack development</span> and 
+        I build <span className="text-white">systems</span> that are 
+        scalable, secure, and performant. Currently focused on 
+        <span className="text-white"> backend development</span> and 
         exploring the intersection of intelligence and technology.
       </p>
 
