@@ -18,7 +18,7 @@ import {
   SiTailwindcss,
   SiFramer,
   SiNodedotjs,
-  SiMongodb,
+  SiPostgresql,
   SiGit,
   SiGithub,
   SiVercel,
@@ -36,6 +36,7 @@ export const Skills = () => {
         { name: "TypeScript", icon: <SiTypescript className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "Python", icon: <SiPython className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "C++", icon: <SiCplusplus className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "SQL", icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
     {
@@ -61,7 +62,7 @@ export const Skills = () => {
       title: "Database",
       icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
-        { name: "MongoDB", icon: <SiMongodb className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "PostgreSQL", icon: <SiPostgresql className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "MySQL", icon: <SiMysql className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
