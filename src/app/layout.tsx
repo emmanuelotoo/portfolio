@@ -173,6 +173,7 @@ export default function RootLayout({
       <body className={`${diaType.variable} ${ppModwest.variable} antialiased`}>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
