@@ -1,29 +1,22 @@
 import { 
   Code, 
   Database, 
-  Globe, 
   Server, 
-  Wrench,
-  Code2
+  Settings
 } from "lucide-react";
 import { 
   SiJavascript,
-  SiTypescript,
   SiPython,
-  SiCplusplus,
-  SiReact,
-  SiNextdotjs,
-  SiExpress,
-  SiFastapi,
-  SiTailwindcss,
-  SiFramer,
+  SiOpenjdk,
+  SiSpringboot,
   SiNodedotjs,
+  SiExpress,
+  SiDjango,
   SiPostgresql,
-  SiGit,
-  SiGithub,
-  SiVercel,
-  SiDigitalocean,
-  SiMysql
+  SiMysql,
+  SiDocker,
+  SiGithubactions,
+  SiAmazon
 } from "react-icons/si";
 
 export const Skills = () => {
@@ -32,30 +25,20 @@ export const Skills = () => {
       title: "Languages",
       icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
-        { name: "JavaScript", icon: <SiJavascript className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "TypeScript", icon: <SiTypescript className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Java", icon: <SiOpenjdk className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "Python", icon: <SiPython className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "C++", icon: <SiCplusplus className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "JavaScript", icon: <SiJavascript className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "SQL", icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
     {
-      title: "Frameworks / Libraries",
-      icon: <Globe className="w-3 h-3 sm:w-4 sm:h-4" />,
-      skills: [
-        { name: "React", icon: <SiReact className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "Express.js", icon: <SiExpress className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "TailwindCSS", icon: <SiTailwindcss className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "Framer Motion", icon: <SiFramer className="w-3 h-3 sm:w-4 sm:h-4" /> },
-      ]
-    },
-    {
-      title: "Backend & Runtime",
+      title: "Core",
       icon: <Server className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
+        { name: "Spring Boot", icon: <SiSpringboot className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { name: "Node.js", icon: <SiNodedotjs className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "FastAPI", icon: <SiFastapi className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Express.js", icon: <SiExpress className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Django", icon: <SiDjango className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     },
     {
@@ -67,14 +50,12 @@ export const Skills = () => {
       ]
     },
     {
-      title: "Developer Tools",
-      icon: <Wrench className="w-3 h-3 sm:w-4 sm:h-4" />,
+      title: "Infrastructure",
+      icon: <Settings className="w-3 h-3 sm:w-4 sm:h-4" />,
       skills: [
-        { name: "Git", icon: <SiGit className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "GitHub", icon: <SiGithub className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "VS Code", icon: <Code2 className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "Vercel", icon: <SiVercel className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "DigitalOcean", icon: <SiDigitalocean className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "Docker", icon: <SiDocker className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "GitHub Actions", icon: <SiGithubactions className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { name: "AWS", icon: <SiAmazon className="w-3 h-3 sm:w-4 sm:h-4" /> },
       ]
     }
   ];
