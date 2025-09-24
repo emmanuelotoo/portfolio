@@ -1,27 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 // import { ExternalLink } from "lucide-react";
 
-const roles = ["software engineer", "developer"];
 
-const textVariants = {
-  initial: { opacity: 0, y: 10 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -10 },
-};
 
 export const Main = () => {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % roles.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section className="flex-grow">
@@ -49,20 +33,8 @@ export const Main = () => {
               emmanuel otoo
             </motion.h1>
             <h2 className="text-secondary-foreground mb-2 font-medium overflow-hidden text-sm sm:text-base">
-            <AnimatePresence mode="wait">
-              <motion.span
-                key={roles[index]}
-                variants={textVariants}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                transition={{ duration: 0.7 }}
-                className="block"
-              >
-                {roles[index]}
-              </motion.span>
-            </AnimatePresence>
-          </h2>
+              <span className="block">software engineer</span>
+            </h2>
           </div>
         </div>
         {/* <a
@@ -80,7 +52,7 @@ export const Main = () => {
       <p className="mb-3 sm:mb-4 text-secondary-foreground leading-relaxed text-sm sm:text-base">
         I build <span className="text-white">systems</span> that are 
         scalable, secure, and performant. Currently focused on 
-        <span className="text-white"> backend development</span> and 
+        <span className="text-white"> backend engineering</span> and 
         exploring the intersection of intelligence and technology.
       </p>
 
