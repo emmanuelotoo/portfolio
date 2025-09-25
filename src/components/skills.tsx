@@ -20,45 +20,7 @@ import {
 } from "react-icons/si";
 
 export const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Languages",
-      icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" />,
-      skills: [
-        { name: "Java", icon: <SiOpenjdk className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "Python", icon: <SiPython className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "JavaScript", icon: <SiJavascript className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "SQL", icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" /> },
-      ]
-    },
-    {
-      title: "Core",
-      icon: <Server className="w-3 h-3 sm:w-4 sm:h-4" />,
-      skills: [
-        { name: "Spring Boot", icon: <SiSpringboot className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "Node.js", icon: <SiNodedotjs className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "Express.js", icon: <SiExpress className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "Django", icon: <SiDjango className="w-3 h-3 sm:w-4 sm:h-4" /> },
-      ]
-    },
-    {
-      title: "Database",
-      icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" />,
-      skills: [
-        { name: "PostgreSQL", icon: <SiPostgresql className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "MySQL", icon: <SiMysql className="w-3 h-3 sm:w-4 sm:h-4" /> },
-      ]
-    },
-    {
-      title: "Infrastructure",
-      icon: <Settings className="w-3 h-3 sm:w-4 sm:h-4" />,
-      skills: [
-        { name: "Docker", icon: <SiDocker className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "GitHub Actions", icon: <SiGithubactions className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { name: "AWS", icon: <SiAmazon className="w-3 h-3 sm:w-4 sm:h-4" /> },
-      ]
-    }
-  ];
+  const skillCategories = [];
   
   return (
     <div className="space-y-3 sm:space-y-4">
