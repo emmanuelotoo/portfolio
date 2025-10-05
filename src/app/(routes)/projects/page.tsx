@@ -6,7 +6,7 @@ const projects = [
     // id: "glim",
     title: "", // Empty title to trigger "Coming Soon..."
     // description: "a screenshot design tool",
-    // href: "https://github.com/deewakar-k/glim",
+    // href: "https://github.com/emmanuelotoo",
   },
   // {
   //   id: "readme",
