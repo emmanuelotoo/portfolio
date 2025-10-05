@@ -10,24 +10,25 @@ export default function Experience() {
       <div className="space-y-4">
         {/* Vandzilah Technology Experience */}
         <motion.div
-          className="relative z-10 -mx-1 flex flex-col gap-2 p-4 cursor-pointer rounded-lg hover:bg-surface/30 transition-colors"
+          className="relative z-10 flex flex-col gap-1 p-4 cursor-pointer rounded-lg hover:bg-surface/30 transition-colors"
           onClick={() => setIsExpanded(!isExpanded)}
           whileHover={{ x: 4 }}
           transition={{ duration: 0.2 }}
         >
-          <div className="flex items-start justify-between gap-6 sm:gap-8">
-            <div className="flex flex-col">
-              <h3 className="text-sm sm:text-base font-medium text-white">
-                Vandzilah Technology
-              </h3>
-              <span className="text-xs sm:text-sm text-secondary-foreground">
-                Software Engineer Intern
-              </span>
-            </div>
+          {/* Company name and date on the same line */}
+          <div className="flex items-baseline justify-between gap-12 sm:gap-16">
+            <h3 className="text-sm sm:text-base font-medium text-white whitespace-nowrap">
+              Vandzilah Technology
+            </h3>
             <span className="text-xs sm:text-sm text-secondary-foreground/70 whitespace-nowrap flex-shrink-0">
               September 2025 - Present
             </span>
           </div>
+          
+          {/* Role on the next line */}
+          <span className="text-xs sm:text-sm text-secondary-foreground">
+            Software Engineer Intern
+          </span>
           
           <AnimatePresence>
             {isExpanded && (
