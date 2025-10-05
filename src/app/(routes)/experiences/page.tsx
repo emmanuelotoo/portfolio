@@ -15,7 +15,7 @@ export default function Experience() {
           whileHover={{ x: 4 }}
           transition={{ duration: 0.2 }}
         >
-          <div className="flex items-start justify-between gap-4">
+          <div className="flex items-start justify-between gap-6 sm:gap-8">
             <div className="flex flex-col">
               <h3 className="text-sm sm:text-base font-medium text-white">
                 Vandzilah Technology
@@ -24,7 +24,7 @@ export default function Experience() {
                 Software Engineer Intern
               </span>
             </div>
-            <span className="text-xs sm:text-sm text-secondary-foreground/70 whitespace-nowrap">
+            <span className="text-xs sm:text-sm text-secondary-foreground/70 whitespace-nowrap flex-shrink-0">
               September 2025 - Present
             </span>
           </div>
