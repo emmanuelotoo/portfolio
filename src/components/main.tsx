@@ -33,7 +33,7 @@ export const Main = () => {
               emmanuel otoo
             </motion.h1>
             <h2 className="text-secondary-foreground mb-2 font-medium overflow-hidden text-sm sm:text-base">
-              <span className="block">software engineer</span>
+              <span className="block">swe</span>
             </h2>
           </div>
         </div>
@@ -49,12 +49,12 @@ export const Main = () => {
         </a> */}
       </div>
 
-      <p className="mb-3 sm:mb-4 text-secondary-foreground leading-relaxed text-sm sm:text-base">
+      {/* <p className="mb-3 sm:mb-4 text-secondary-foreground leading-relaxed text-sm sm:text-base">
         I build <span className="text-white">systems</span> that are 
         scalable, secure, and performant. Currently focused on 
         <span className="text-white"> backend engineering</span> and 
         exploring the intersection of intelligence and technology.
-      </p>
+      </p> */}
 
       <p className="text-secondary-foreground text-sm sm:text-base">{`i enjoy doing cool stuff, getting into football banter, and binge-watching shows.`}</p>
 

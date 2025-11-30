@@ -23,6 +23,7 @@ const diaType = localFont({
     },
   ],
   variable: "--font-diatype",
+  display: "swap",
 });
 
 const ppModwest = localFont({
@@ -34,6 +35,7 @@ const ppModwest = localFont({
     },
   ],
   variable: "--font-ppModwest",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
