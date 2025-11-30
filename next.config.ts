@@ -10,7 +10,12 @@ const nextConfig: NextConfig = {
   // Image optimization
   images: {
     formats: ['image/webp', 'image/avif'],
-    domains: ['emmanuelotoo.dev'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'emmanuelotoo.dev',
+      },
+    ],
   },
   
   // Security headers

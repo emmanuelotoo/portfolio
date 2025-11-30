@@ -2,7 +2,6 @@ import { Footer } from "@/components/footer";
 import { Main } from "@/components/main";
 import { Navbar } from "@/components/navbar";
 import { Status } from "@/components/status";
-import { Skills } from "@/components/skills";
 import { ErrorBoundary } from "@/components/error-boundary";
 import { SkipNavigation } from "@/components/skip-navigation";
 
@@ -24,10 +23,6 @@ export default function Home() {
             
             <ErrorBoundary>
               <Status />
-            </ErrorBoundary>
-            
-            <ErrorBoundary>
-              <Skills />
             </ErrorBoundary>
             
             <ErrorBoundary>
