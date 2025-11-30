@@ -2,7 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
-interface Thought {
+interface BlogPost {
   id: string;
   title: string;
   date: string;
@@ -10,18 +10,18 @@ interface Thought {
   content: string;
 }
 
-const thoughts: Thought[] = [
+const blogPosts: BlogPost[] = [
   {
     id: "1",
     title: "Hello World",
     date: "November 2025",
     summary: "First post",
-    content: "Welcome to my thoughts section. I'll be writing about technology, software engineering, and other things I find interesting here."
+    content: "Welcome to my blog. I'll be writing about technology, software engineering, and other things I find interesting here."
   }
 ];
 
-export default function Thoughts() {
-  // State to track which thought is expanded
+export default function Blog() {
+  // State to track which post is expanded
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const toggleExpand = (id: string) => {
@@ -31,31 +31,31 @@ export default function Thoughts() {
   return (
     <section className="mb-16">
       <div className="space-y-4">
-        {thoughts.map((thought) => (
+        {blogPosts.map((post) => (
           <motion.div
-            key={thought.id}
+            key={post.id}
             className="relative z-10 flex flex-col gap-1 p-4 cursor-pointer rounded-lg hover:bg-surface/30 transition-colors"
-            onClick={() => toggleExpand(thought.id)}
+            onClick={() => toggleExpand(post.id)}
             whileHover={{ x: 4 }}
             transition={{ duration: 0.2 }}
           >
             {/* Title and date on the same line */}
             <div className="flex items-baseline justify-between gap-12 sm:gap-16">
               <h3 className="text-sm sm:text-base font-medium text-white whitespace-nowrap">
-                {thought.title}
+                {post.title}
               </h3>
               <span className="text-xs sm:text-sm text-secondary-foreground/70 whitespace-nowrap flex-shrink-0">
-                {thought.date}
+                {post.date}
               </span>
             </div>
             
             {/* Summary on the next line */}
             <span className="text-xs sm:text-sm text-secondary-foreground">
-              {thought.summary}
+              {post.summary}
             </span>
             
             <AnimatePresence>
-              {expandedId === thought.id && (
+              {expandedId === post.id && (
                 <motion.div
                   initial={{ opacity: 0, height: 0, marginTop: 0 }}
                   animate={{ opacity: 1, height: "auto", marginTop: 8 }}
@@ -64,7 +64,7 @@ export default function Thoughts() {
                   style={{ overflow: "hidden" }}
                 >
                   <p className="text-xs sm:text-sm text-secondary-foreground/90 leading-relaxed">
-                    {thought.content}
+                    {post.content}
                   </p>
                 </motion.div>
               )}
