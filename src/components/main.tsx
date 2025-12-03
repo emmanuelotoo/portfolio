@@ -56,7 +56,7 @@ export const Main = () => {
         exploring the intersection of intelligence and technology.
       </p> */}
 
-      <p className="text-secondary-foreground text-sm sm:text-base">{`i enjoy doing cool stuff, getting into football banter, and binge-watching shows.`}</p>
+      <p className="text-secondary-foreground text-sm sm:text-base">{`i enjoy building cool stuff, getting into football banter, and binge-watching shows.`}</p>
 
       
     </section>
