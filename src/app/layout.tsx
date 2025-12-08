@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     default: "Emmanuel Otoo - Software Engineer & Developer",
     template: "%s | Emmanuel Otoo"
   },
-  description: "Software Engineer and Full-Stack Developer building intuitive, accessible, and performant digital solutions. Specializing in React, Next.js, TypeScript, and modern web technologies.",
+  description: "Software Engineer.",
   keywords: [
     "Emmanuel Otoo",
     "Software Engineer",
@@ -75,8 +75,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://emmanuelotoo.dev",
-    title: "Emmanuel Otoo - Software Engineer & Developer",
-    description: "Software Engineer and Full-Stack Developer building intuitive, accessible, and performant digital solutions.",
+    title: "Emmanuel Otoo - Software Engineer",
+    description: "Software Engineer.",
     siteName: "Emmanuel Otoo Portfolio",
     images: [
       {
@@ -90,8 +90,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emmanuel Otoo - Software Engineer & Developer",
-    description: "Software Engineer and Full-Stack Developer building intuitive, accessible, and performant digital solutions.",
+    title: "Emmanuel Otoo - Software Engineer",
+    description: "Software Engineer",
     creator: "@emmanuelotoo_",
     images: ["https://emmanuelotoo.dev/og-image.png"],
   },
@@ -110,12 +110,12 @@ export default function RootLayout({
     "@type": "Person",
     name: "Emmanuel Otoo",
     jobTitle: "Software Engineer",
-    description: "Software Engineer and Full-Stack Developer building intuitive, accessible, and performant digital solutions.",
+    description: "Software Engineer",
     url: "https://emmanuelotoo.dev",
     image: "https://emmanuelotoo.dev/profile.jpg",
     sameAs: [
       "https://github.com/emmanuelotoo",
-      "https://www.linkedin.com/in/emmanuel-thisara-otoo-6b9a291b0/",
+      "https://www.linkedin.com/in/emmanuel-otoo-/",
       "https://x.com/emmanuelotoo_"
     ],
     knowsAbout: [
