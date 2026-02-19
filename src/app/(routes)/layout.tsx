@@ -1,4 +1,4 @@
-import { BackButton } from "@/components/back-btn";
+import { BackButton } from "./components/back-button";
 import { ReactNode } from "react";
 
 export default function Layout({ children }: { children: ReactNode }) {
