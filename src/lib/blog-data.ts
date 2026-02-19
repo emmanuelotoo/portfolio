@@ -10,11 +10,12 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
-    slug: "hello-world",
-    title: "hello world",
-    date: "30th nov, 2025",
+    slug: "what-i-would-have-done-in-my-cs-year",
+    title: "what i would have done in my cs year",
+    date: "24th dec, 2025",
     summary: "first post",
-    content: "welcome to my blog. I'll be writing about technology, software engineering, and other things I find interesting here."
+    content: 
+    "its "
   }
 ];
 
