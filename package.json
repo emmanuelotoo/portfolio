@@ -15,7 +15,7 @@
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "framer-motion": "^12.23.11",
-    "lucide-react": "^0.577.0",
+    "lucide-react": "^1.7.0",
     "next": "^16.1.6",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
@@ -28,9 +28,9 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "baseline-browser-mapping": "^2.9.19",
-    "eslint": "^9.39.4",
+    "eslint": "^10.2.0",
     "eslint-config-next": "^16.1.6",
     "tailwindcss": "^4",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   }
 }
