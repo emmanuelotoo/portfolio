@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getPostBySlug } from "@/lib/blog-data";
+import Comments from "@/components/comments";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -24,6 +25,8 @@ export default async function BlogPostPage({ params }: PageProps) {
       <div className="prose prose-invert prose-sm sm:prose-base max-w-none text-secondary-foreground leading-relaxed whitespace-pre-wrap">
         {post.content}
       </div>
+
+      <Comments />
     </article>
   );
 }
