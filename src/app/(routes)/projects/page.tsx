@@ -53,7 +53,7 @@ export default function Projects() {
         const card = (
           <motion.div
             key={index}
-            className="relative z-10 flex cursor-pointer flex-col gap-1 rounded-lg p-4 text-secondary-foreground hover:bg-surface/30 transition-colors"
+            className="relative z-10 flex flex-col gap-1 rounded-lg p-4 text-secondary-foreground hover:bg-surface/30 transition-colors"
             whileHover={{ x: 4 }}
             transition={{ duration: 0.2 }}
           >
@@ -70,16 +70,20 @@ export default function Projects() {
                 {project.description}
               </p>
             )}
+            {project.href && (
+              <a
+                href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-secondary-foreground/50 hover:text-white transition-colors mt-1 w-fit"
+              >
+                github ↗
+              </a>
+            )}
           </motion.div>
         );
 
-        return project.href ? (
-          <a key={index} href={project.href} target="_blank" rel="noopener noreferrer">
-            {card}
-          </a>
-        ) : (
-          card
-        );
+        return card;
       })}
     </motion.div>
   );
