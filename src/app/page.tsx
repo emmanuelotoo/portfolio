@@ -2,12 +2,9 @@
 import { Main } from "@/components/main";
 import { Navbar } from "@/components/navbar";
 import { ErrorBoundary } from "@/components/error-boundary";
-import { SkipNavigation } from "@/components/skip-navigation";
-
 export default function Home() {
   return (
     <>
-      <SkipNavigation />
       <div className="flex max-w-full flex-col py-20 px-4 sm:py-32 md:py-40 lg:py-52">
         <div className="flex flex-grow items-center justify-center">
           <main 
