@@ -7,7 +7,7 @@ export const BackButton = () => {
   const router = useRouter();
   return (
     <button
-      onClick={() => router.back()}
+      onClick={() => router.push("/")}
       className="flex cursor-pointer items-center gap-1"
     >
       <Image
