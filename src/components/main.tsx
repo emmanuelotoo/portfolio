@@ -25,7 +25,7 @@ export const Main = () => {
         </div>
       </div>
 
-      <p className="text-secondary-foreground text-sm sm:text-base">i enjoy building cool stuff, getting into football banter, and binge-watching shows.</p>
+      <p className="text-secondary-foreground text-sm sm:text-base">i enjoy building cool stuff, getting into football banter, taking pictures and binge-watching shows.</p>
     </section>
   );
 };
