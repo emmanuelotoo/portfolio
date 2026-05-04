@@ -21,20 +21,20 @@ export default function Thoughts() {
   const posts = getAllPosts();
 
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-20">
       <section>
         <h2 className="text-sm text-secondary-foreground/50 mb-4 px-4">
           notes
         </h2>
-        <motion.div className="relative flex flex-col gap-4">
+        <div className="flex flex-col gap-8">
           {notes.map((note, index) => (
             <motion.div
               key={index}
-              className="relative z-10 flex flex-col gap-1 rounded-lg p-4 text-secondary-foreground hover:bg-surface/30 transition-colors"
+              className="relative z-10 flex flex-col gap-0.5 rounded-lg px-4 py-3 text-secondary-foreground hover:bg-surface/30 transition-colors"
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
             >
-              <h3 className="relative z-10 text-sm font-sm">{note.title}</h3>
+              <h3 className="relative z-10 text-sm">{note.title}</h3>
               {note.description && (
                 <p className="text-sm text-secondary-foreground relative z-10">
                   {note.description}
@@ -45,21 +45,21 @@ export default function Thoughts() {
                   href={note.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-secondary-foreground/50 hover:text-white transition-colors mt-1 w-fit"
+                  className="text-xs text-secondary-foreground/50 hover:text-white transition-colors mt-0.5 w-fit"
                 >
                   notion ↗
                 </a>
               )}
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </section>
 
       <section>
         <h2 className="text-sm text-secondary-foreground/50 mb-4 px-4">
           blog
         </h2>
-        <motion.div className="relative flex flex-col gap-4">
+        <div className="flex flex-col gap-8">
           {posts.map((post: BlogPost) => (
             <Link
               key={post.slug}
@@ -67,18 +67,18 @@ export default function Thoughts() {
               className="block"
             >
               <motion.div
-                className="relative z-10 flex flex-col gap-1 rounded-lg p-4 text-secondary-foreground hover:bg-surface/30 transition-colors cursor-pointer"
+                className="relative z-10 flex flex-col gap-0.5 rounded-lg px-4 py-3 text-secondary-foreground hover:bg-surface/30 transition-colors cursor-pointer"
                 whileHover={{ x: 4 }}
                 transition={{ duration: 0.2 }}
               >
-                <h3 className="relative z-10 text-sm font-sm">{post.title}</h3>
+                <h3 className="relative z-10 text-sm">{post.title}</h3>
                 <p className="text-sm text-secondary-foreground relative z-10">
                   {post.date}
                 </p>
               </motion.div>
             </Link>
           ))}
-        </motion.div>
+        </div>
       </section>
     </div>
   );
