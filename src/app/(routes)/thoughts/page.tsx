@@ -1,7 +1,4 @@
-"use client";
-import { motion } from "framer-motion";
 import Link from "next/link";
-import type { BlogPost } from "@/lib/blog-data";
 import { getAllPosts } from "@/lib/blog-data";
 
 const notes = [
@@ -28,11 +25,9 @@ export default function Thoughts() {
         </h2>
         <div className="flex flex-col gap-8">
           {notes.map((note, index) => (
-            <motion.div
+            <div
               key={index}
-              className="relative z-10 flex flex-col gap-0.5 rounded-lg px-4 py-3 text-secondary-foreground hover:bg-surface/30 transition-colors"
-              whileHover={{ x: 4 }}
-              transition={{ duration: 0.2 }}
+              className="relative z-10 flex flex-col gap-0.5 rounded-lg px-4 py-3 text-secondary-foreground hover:bg-surface/30 hover:translate-x-1 transition-all duration-200"
             >
               <h3 className="relative z-10 text-sm">{note.title}</h3>
               {note.description && (
@@ -50,7 +45,7 @@ export default function Thoughts() {
                   notion ↗
                 </a>
               )}
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
@@ -60,22 +55,18 @@ export default function Thoughts() {
           blog
         </h2>
         <div className="flex flex-col gap-8">
-          {posts.map((post: BlogPost) => (
+          {posts.map((post) => (
             <Link
               key={post.slug}
               href={`/thoughts/${post.slug}`}
               className="block"
             >
-              <motion.div
-                className="relative z-10 flex flex-col gap-0.5 rounded-lg px-4 py-3 text-secondary-foreground hover:bg-surface/30 transition-colors cursor-pointer"
-                whileHover={{ x: 4 }}
-                transition={{ duration: 0.2 }}
-              >
+              <div className="relative z-10 flex flex-col gap-0.5 rounded-lg px-4 py-3 text-secondary-foreground hover:bg-surface/30 hover:translate-x-1 transition-all duration-200 cursor-pointer">
                 <h3 className="relative z-10 text-sm">{post.title}</h3>
                 <p className="text-sm text-secondary-foreground relative z-10">
                   {post.date}
                 </p>
-              </motion.div>
+              </div>
             </Link>
           ))}
         </div>
