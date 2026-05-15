@@ -23,7 +23,7 @@ export const Time = () => {
 
   return (
     <p className="tabular-nums">
-      {time || "--:--"} <span className="text-secondary-foreground/60">GMT</span>
+      {time || "--:--"} <span className="text-secondary-foreground/60">· accra</span>
     </p>
   );
 };
