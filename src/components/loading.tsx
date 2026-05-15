@@ -1,42 +1,25 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 export const Loading = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen" role="status" aria-label="Loading">
-      <div className="flex flex-col items-center gap-4">
-        <motion.div
-          className="flex gap-1"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          {[0, 1, 2].map((index) => (
-            <motion.div
-              key={index}
-              className="w-2 h-2 bg-foreground rounded-full"
-              animate={{
-                y: [0, -8, 0],
-                opacity: [0.5, 1, 0.5],
-              }}
-              transition={{
-                duration: 1,
-                repeat: Infinity,
-                delay: index * 0.2,
-                ease: "easeInOut",
-              }}
-            />
-          ))}
-        </motion.div>
-        <motion.p
-          className="text-sm text-secondary-foreground"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-        >
-          Loading...
-        </motion.p>
+    <div className="flex max-w-full flex-col py-20 px-4 sm:py-32 md:py-40 lg:py-52" role="status" aria-label="Loading">
+      <div className="flex flex-grow items-center justify-center">
+        <div className="flex w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl flex-col gap-6 sm:gap-7 md:gap-8 animate-pulse">
+          <div className="flex flex-col items-center gap-4">
+            <div className="size-16 sm:size-20 rounded-full bg-surface" />
+            <div className="h-5 w-32 rounded bg-surface" />
+            <div className="h-3 w-16 rounded bg-surface" />
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="h-3 w-full rounded bg-surface" />
+            <div className="h-3 w-4/5 rounded bg-surface" />
+          </div>
+          <div className="flex flex-col gap-3">
+            <div className="h-3 w-20 rounded bg-surface" />
+            <div className="h-3 w-16 rounded bg-surface" />
+            <div className="h-3 w-12 rounded bg-surface" />
+          </div>
+        </div>
       </div>
     </div>
   );
