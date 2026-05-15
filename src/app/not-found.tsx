@@ -13,17 +13,17 @@ export default function NotFound() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-foreground/20 mb-4">
+            <h1 className="font-ppModwest text-6xl sm:text-7xl md:text-8xl text-foreground/20 mb-4">
               404
             </h1>
             <h2 className="text-xl sm:text-2xl font-medium text-foreground mb-2">
-              Page not found
+              nothing here
             </h2>
             <p className="text-secondary-foreground mb-8">
-              The page you&apos;re looking for doesn&apos;t exist or has been moved.
+              you wandered off the map. it happens.
             </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -34,13 +34,13 @@ export default function NotFound() {
               href="/"
               className="px-6 py-3 bg-foreground text-background rounded-md hover:bg-foreground/90 transition-colors focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:ring-offset-2 focus:ring-offset-background"
             >
-              Go home
+              go home
             </Link>
             <Link
               href="/projects"
               className="px-6 py-3 border border-secondary-foreground/20 text-foreground rounded-md hover:bg-surface/50 transition-colors focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:ring-offset-2 focus:ring-offset-background"
             >
-              View projects
+              view projects
             </Link>
           </motion.div>
         </div>
