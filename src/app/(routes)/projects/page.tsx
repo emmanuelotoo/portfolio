@@ -7,6 +7,11 @@ const projects = [
     description: "never miss sakai updates again",
     href: "https://github.com/emmanuelotoo/sakai-bot",
   },
+  {
+    title: "easy send",
+    description: "send mtn momo payments by texting your own whatsapp",
+    href: "https://github.com/emmanuelotoo/easy-send",
+  },
 ];
 
 const AnimatedDots = () => {
