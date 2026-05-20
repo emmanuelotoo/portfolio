@@ -25,7 +25,27 @@ export const Main = () => {
         </div>
       </div>
 
-      <p className="text-secondary-foreground text-sm sm:text-base">i enjoy building cool stuff, getting into football banter, taking pictures and binge-watching shows.</p>
+      <p className="text-secondary-foreground text-sm sm:text-base">
+        i enjoy building cool stuff, getting into football banter, taking{" "}
+        <a
+          href="https://vsco.co/thisara0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-all duration-300 hover:text-white underline decoration-dashed underline-offset-[5px] focus:outline-none rounded"
+        >
+          pictures
+        </a>{" "}
+        and binge-watching{" "}
+        <a
+          href="https://www.serializd.com/user/emmanuelotoo/watched"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-all duration-300 hover:text-white underline decoration-dashed underline-offset-[5px] focus:outline-none rounded"
+        >
+          shows
+        </a>
+        .
+      </p>
     </section>
   );
 };
