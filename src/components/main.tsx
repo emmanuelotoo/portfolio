@@ -31,7 +31,7 @@ export const Main = () => {
           href="https://vsco.co/thisara0"
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-all duration-300 hover:text-white underline decoration-dashed underline-offset-[5px] focus:outline-none rounded"
+          className="transition-all duration-300 hover:text-accent underline decoration-dashed underline-offset-[5px] focus:outline-none rounded"
         >
           pictures
         </a>{" "}
@@ -40,7 +40,7 @@ export const Main = () => {
           href="https://www.serializd.com/user/emmanuelotoo/watched"
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-all duration-300 hover:text-white underline decoration-dashed underline-offset-[5px] focus:outline-none rounded"
+          className="transition-all duration-300 hover:text-accent underline decoration-dashed underline-offset-[5px] focus:outline-none rounded"
         >
           shows
         </a>

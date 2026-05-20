@@ -12,7 +12,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           className="p-2 -m-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
         >
-          <FaGithub className="text-secondary-foreground size-4 sm:size-5 transition-colors duration-300 hover:text-white" />
+          <FaGithub className="text-secondary-foreground size-4 sm:size-5 transition-colors duration-300 hover:text-accent" />
         </a>
         <a 
           href="https://www.linkedin.com/in/emmanuel-thisara-otoo-6b9a291b0/" 
@@ -20,7 +20,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           className="p-2 -m-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
         >
-          <FaLinkedinIn className="text-secondary-foreground size-4 sm:size-5 transition-colors duration-300 hover:text-white" />
+          <FaLinkedinIn className="text-secondary-foreground size-4 sm:size-5 transition-colors duration-300 hover:text-accent" />
         </a>
         <a 
           href="https://x.com/emmanuelotoo_" 
@@ -28,7 +28,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           className="p-2 -m-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
         >
-          <FaXTwitter className="text-secondary-foreground size-4 sm:size-5 transition-colors duration-300 hover:text-white" />
+          <FaXTwitter className="text-secondary-foreground size-4 sm:size-5 transition-colors duration-300 hover:text-accent" />
         </a>
         <a 
           href="mailto:eotoo218@gmail.com" 
@@ -36,7 +36,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           className="p-2 -m-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
         >
-          <Mail className="text-secondary-foreground size-4 sm:size-5 transition-colors duration-300 hover:text-white" />
+          <Mail className="text-secondary-foreground size-4 sm:size-5 transition-colors duration-300 hover:text-accent" />
         </a>
       </div>
       <div className="text-xs sm:text-sm">

@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { EntryCard } from "@/components/entry-card";
+import { SectionHeader } from "@/components/section-header";
 import { getAllPosts } from "@/lib/blog-data";
 
 const notes = [
@@ -18,53 +19,29 @@ export default function Thoughts() {
   return (
     <div className="flex flex-col gap-20">
       <section>
-        <div className="px-4 mb-6">
-          <h2 className="text-base text-secondary-foreground/70 tracking-wide">
-            notes
-          </h2>
-          <div className="mt-2 h-px w-8 bg-secondary-foreground/20" />
-        </div>
+        <SectionHeader label="notes" />
         <div className="flex flex-col gap-8">
-          {notes.map((note, index) => (
-            <div
-              key={index}
-              className="relative z-10 flex flex-col gap-0.5 rounded-lg px-4 py-3 text-secondary-foreground hover:bg-surface/30 hover:translate-x-1 transition-all duration-200"
-            >
-              <h3 className="relative z-10 text-sm">{note.title}</h3>
-              <a
-                href={note.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-secondary-foreground/50 hover:text-white transition-colors mt-0.5 w-fit"
-              >
-                notion ↗
-              </a>
-            </div>
+          {notes.map((note) => (
+            <EntryCard
+              key={note.title}
+              title={note.title}
+              externalHref={note.href}
+              externalLabel="notion"
+            />
           ))}
         </div>
       </section>
 
       <section>
-        <div className="px-4 mb-6">
-          <h2 className="text-base text-secondary-foreground/70 tracking-wide">
-            blog
-          </h2>
-          <div className="mt-2 h-px w-8 bg-secondary-foreground/20" />
-        </div>
+        <SectionHeader label="blog" />
         <div className="flex flex-col gap-8">
           {posts.map((post) => (
-            <Link
+            <EntryCard
               key={post.slug}
-              href={`/thoughts/${post.slug}`}
-              className="block"
-            >
-              <div className="relative z-10 flex flex-col gap-0.5 rounded-lg px-4 py-3 text-secondary-foreground hover:bg-surface/30 hover:translate-x-1 transition-all duration-200 cursor-pointer">
-                <h3 className="relative z-10 text-sm">{post.title}</h3>
-                <p className="text-sm text-secondary-foreground relative z-10">
-                  {post.date}
-                </p>
-              </div>
-            </Link>
+              title={post.title}
+              subtitle={post.date}
+              internalHref={`/thoughts/${post.slug}`}
+            />
           ))}
         </div>
       </section>

@@ -7,6 +7,7 @@
   --color-foreground: var(--foreground);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-surface: var(--surface);
+  --color-accent: var(--accent);
   --font-newType: var(--font-newType);
   --font-ppModwest: var(--font-ppModwest);
 }
@@ -16,6 +17,7 @@
   --foreground: #d0d0d0;
   --secondary-foreground: rgb(163 163 163);
   --surface: #141414;
+  --accent: #e8a04b;
 }
 
 /* Force dark mode - override any system preferences */
@@ -33,6 +35,20 @@ body {
   color: var(--foreground);
   font-family: var(--font-diatype);
   overflow-x: hidden;
+}
+
+/* Soft vignette for depth */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 120% 120% at 50% 38%,
+    transparent 58%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
 }
 
 /* Improve touch targets and accessibility */
@@ -107,6 +123,7 @@ body {
     --foreground: #ffffff;
     --secondary-foreground: #cccccc;
     --surface: #333333;
+    --accent: #ffc46b;
   }
   
   html, body {
