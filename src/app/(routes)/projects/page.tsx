@@ -9,7 +9,7 @@ const projects = [
   },
   {
     title: "easy send",
-    description: "send mtn momo payments by texting your own whatsapp",
+    description: "send money on whatsapp",
     href: "https://github.com/emmanuelotoo/easy-send",
   },
 ];
