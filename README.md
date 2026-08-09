@@ -2,13 +2,13 @@
 
 Software Engineer.
 
-##  [emmanuelotoo.dev](https://emmanuelotoo.dev)
+##  [emmanuelotoo.github.io](https://emmanuelotoo.github.io)
 
 ##  Tech Stack
-- **Framework**: Next.js 16 (Turbopack)
+- **Framework**: Next.js 16 (Turbopack), static export
 - **Styling**: Tailwind CSS v4
 - **Animations**: Framer Motion
-- **Deployment**: Vercel
+- **Deployment**: GitHub Pages (via GitHub Actions)
 
 ##  Features
 - Minimalist dark theme

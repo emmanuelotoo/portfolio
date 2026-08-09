@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const diaType = localFont({
   src: [
@@ -57,7 +55,7 @@ export const metadata: Metadata = {
     "Backend Developer",
     "Ghana Developer"
   ],
-  authors: [{ name: "Emmanuel Otoo", url: "https://emmanuelotoo.dev" }],
+  authors: [{ name: "Emmanuel Otoo", url: "https://emmanuelotoo.github.io" }],
   creator: "Emmanuel Otoo",
   publisher: "Emmanuel Otoo",
   robots: {
@@ -74,13 +72,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://emmanuelotoo.dev",
+    url: "https://emmanuelotoo.github.io",
     title: "Emmanuel Otoo - Software Engineer",
     description: "Software Engineer.",
     siteName: "Emmanuel Otoo Portfolio",
     images: [
       {
-        url: "https://emmanuelotoo.dev/og-image.png",
+        url: "https://emmanuelotoo.github.io/og-image.png",
         width: 1200,
         height: 630,
         alt: "Emmanuel Otoo - Software Engineer & Developer",
@@ -93,11 +91,11 @@ export const metadata: Metadata = {
     title: "Emmanuel Otoo - Software Engineer",
     description: "Software Engineer",
     creator: "@emmanuelotoo_",
-    images: ["https://emmanuelotoo.dev/og-image.png"],
+    images: ["https://emmanuelotoo.github.io/og-image.png"],
   },
-  metadataBase: new URL("https://emmanuelotoo.dev"),
+  metadataBase: new URL("https://emmanuelotoo.github.io"),
   alternates: {
-    canonical: "https://emmanuelotoo.dev",
+    canonical: "https://emmanuelotoo.github.io",
   },
   category: "technology",
 };
@@ -111,8 +109,8 @@ export default function RootLayout({
     name: "Emmanuel Otoo",
     jobTitle: "Software Engineer",
     description: "Software Engineer",
-    url: "https://emmanuelotoo.dev",
-    image: "https://emmanuelotoo.dev/profile.jpg",
+    url: "https://emmanuelotoo.github.io",
+    image: "https://emmanuelotoo.github.io/profile.jpg",
     sameAs: [
       "https://github.com/emmanuelotoo",
       "https://www.linkedin.com/in/emmanuel-otoo-/",
@@ -160,7 +158,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <link rel="canonical" href="https://emmanuelotoo.dev" />
+        <link rel="canonical" href="https://emmanuelotoo.github.io" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
         <meta name="theme-color" content="#111111" />
         <meta name="color-scheme" content="dark" />
@@ -174,8 +172,6 @@ export default function RootLayout({
       </head>
       <body className={`${diaType.variable} ${ppModwest.variable} antialiased`}>
         {children}
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );

@@ -1,9 +1,13 @@
 import { notFound } from "next/navigation";
-import { getPostBySlug } from "@/lib/blog-data";
+import { getAllPosts, getPostBySlug } from "@/lib/blog-data";
 import Comments from "@/components/comments";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
+}
+
+export function generateStaticParams() {
+  return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
 export default async function BlogPostPage({ params }: PageProps) {

@@ -6,7 +6,7 @@ export default function Comments() {
   return (
     <section className="mt-12 border-t border-secondary-foreground/10 pt-8">
       <Giscus
-        repo="emmanuelotoo/portfolio"
+        repo="emmanuelotoo/emmanuelotoo.github.io"
         repoId="R_kgDOPZCvlA"
         category="General"
         categoryId="DIC_kwDOPZCvlM4C6C8f"
